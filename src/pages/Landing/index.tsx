@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { BiMouse, BiChevronLeft, BiChevronRight } from 'react-icons/bi';
-import { Container, Header, CardOne, CordTwo } from './styles';
+import { Container, Header, CardOne, CordTwo, CardTwoContent } from './styles';
 
 import iconImg from '../../assets/icon.png';
 import cardOneImg from '../../assets/card-1/image.png';
@@ -30,32 +30,37 @@ const Landing: React.FC = () => {
           <BiMouse size={20} color="#FFF" />
         </div>
       </CardOne>
-
       <CordTwo>
         <BiChevronLeft size={110} color="#FFF" />
-        <div>
-          <img src={imgGrant} alt="Imagem do Grant" />
+        <CardTwoContent>
+          <div>
+            <img src={imgGrant} alt="Imagem do Grant" />
+          </div>
           <p>
             A Camerata foi apoenas os dois no início e suas fileiras nunca foram
             destinadas a exceder um número a ser contado em uma mão.
           </p>
-        </div>
-        <div>
-          <img src={imgRed} alt="" />
+        </CardTwoContent>
+        <CardTwoContent>
+          <div>
+            <img src={imgRed} alt="" />
+          </div>
           <p>
             Red, uma jomvem cantora, entrou em posse do Trnsistor. Sendo a
             poderosa espada falante. O grupo Possessores quer tanto ela quanto o
             Transistor e está perseguindo implacavelmente a sua procura.
           </p>
-        </div>
-        <div>
-          <img src={imgSybil} alt="" />
+        </CardTwoContent>
+        <CardTwoContent>
+          <div>
+            <img src={imgSybil} alt="" />
+          </div>
           <p>
             Sybil é descrita pelo Transistor como sendo os "olhos e ouvidos" da
             Camerata.
           </p>
-        </div>
-        <BiChevronRight size={110} color="#FFF" />
+        </CardTwoContent>
+        <BiChevronRight size={110} color="#FFF" enableBackground={500} />
       </CordTwo>
     </Container>
   );

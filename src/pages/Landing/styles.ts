@@ -7,8 +7,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
-  height: 100vh; /* tenha 100% do tamanho (altura) da tela */
+  height: 100vh;
+  width: 100vw;
 `;
 
 export const Header = styled.header`
@@ -78,32 +78,42 @@ export const CardOne = styled.div`
 
 export const CordTwo = styled.div`
   display: flex;
-  flex: 1;
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
-  padding: 40px;
+  padding: 40px 60px;
   align-items: center;
   justify-content: space-between;
+`;
+
+export const CardTwoContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  height: 610px;
+  margin-top: 130px;
+  background-color: white;
+  align-items: center;
+  border-radius: 20px;
 
   div {
-    display: flex;
-    flex-direction: column;
-    width: 390px;
-    height: 610px;
-    margin-top: 100px;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
+    width: 370px;
+    height: 420px;
+    border: 2px solid #999;
+    border-radius: 100px;
+    border-color: #fff;
+    margin-top: -60px;
+    background-color: #363636;
+  }
 
-    img {
-      position: relative;
-      width: 370px;
-      height: 520px;
-      border: 4px solid #999;
-      border-radius: 100px;
-      border-color: blue;
-      background-color: red;
-      left: 150;
-    }
+  img {
+    width: 370px;
+    height: 520px;
+    margin-top: -100px;
+  }
+
+  p {
+    margin-top: 20px;
+    max-width: 300px;
+    font-family: 'Open Sans', sans-serif;
   }
 `;
